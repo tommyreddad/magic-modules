@@ -53,15 +53,15 @@ parameters:
 properties:
   - name: name
     type: String
-    description: Required. The resource name of the config. Must be in the format of, `projects/{project}/locations/{location}/googleChannelConfig`.
+    description: The resource name of the config. Must be in the format of, `projects/{project}/locations/{location}/googleChannelConfig`.
     required: true
     immutable: true
     diff_suppress_func: tpgresource.CompareSelfLinkOrResourceName
   - name: updateTime
     type: String
-    description: Output only. The last-modified time.
+    description: The last-modified time.
     output: true
   - name: cryptoKeyName
     type: String
     diff_suppress_func: tpgresource.CompareSelfLinkOrResourceName
-    description: Optional. Resource name of a KMS crypto key (managed by the user) used to encrypt/decrypt their event data. It must match the pattern `projects/*/locations/*/keyRings/*/cryptoKeys/*`.
+    description: Resource name of a KMS crypto key (managed by the user) used to encrypt/decrypt their event data. It must match the pattern `projects/*/locations/*/keyRings/*/cryptoKeys/*`.
